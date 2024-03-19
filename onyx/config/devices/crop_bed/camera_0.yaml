@@ -1,0 +1,17 @@
+bed_location_id: 0
+fps: 3
+ip_address: 169.254.8.10
+roi:
+  x: 0
+  y: 0
+  w: 1280
+  h: 1024
+pixel_format: BAYER_RG_8
+trigger: Software
+acquisition_mode: Continuous
+auto_packet_size: true
+auto_gain: true
+auto_brightness: true
+auto_exposure: true
+exposure_min: 100
+exposure_max: 30000

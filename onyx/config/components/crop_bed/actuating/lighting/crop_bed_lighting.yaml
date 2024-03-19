@@ -1,0 +1,5 @@
+crop_bed_id: 0
+canbus_id: can3
+port: 17653
+pdm_config_files:
+  0: ./config/devices/crop_bed/pdm_utilities.yaml

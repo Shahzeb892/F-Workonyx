@@ -1,0 +1,7 @@
+crop_bed_id: 2
+canbus_id: can2
+port: 17652
+pdm_config_files:
+  1: ./config/devices/crop_bed/pdm_1.yaml
+  0: ./config/devices/crop_bed/pdm_0.yaml
+channel_map: null

@@ -1,0 +1,49 @@
+[package]
+name = "onyx"
+version = "0.1.0"
+edition = "2021"
+
+[features]
+default = []
+hardware_test = []
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+priority-queue = "1.3.2"
+image = "0.24.5"
+chrono = { version = "0.4.24", features = ["serde"]}
+#config = "0.13.3" TODO: Bump config to the correct version.
+config = {git = "https://github.com/mehcode/config-rs.git"}
+strum = "0.24.1"
+strum_macros = "0.24.3"
+ringbuffer = "0.14.2"
+serde_yaml = "0.9"
+reqwest = { version = "0.11", features = ["json"] }
+tokio = { version = "1.28.2", features = ["full"] }
+serde = { version = "1.0", features = ["derive"]}
+aravis = { version = "0.9.0", features = ["bayer"]}
+ix3212_pdm ={path="../dependencies/ix3212-pdm-rs"}
+socketcan = {git = "https://github.com/socketcan-rs/socketcan-rs.git", branch = "master", features = ["tokio"]}
+serde_with = "3.1.0"
+futures = "0.3"
+impls = "1"
+tokio-util = { version = "0.6", features = ["codec"] }
+static_assertions = "1.1.0"
+serde_json = "1.0"
+tokio-serde = { version = "0.8", features = ["json"] }
+
+
+[dependencies.uuid]
+  version = "1.3.0"
+  features = [
+      "serde",
+      "v4",                # Lets you generate random UUIDs
+      "fast-rng",          # Use a faster (but still sufficiently random) RNG
+      "macro-diagnostics", # Enable better diagnostics for compile-time UUIDs
+  ]
+
+
+[dev-dependencies]
+serial_test = "*"
+rstest = "0.17.0"

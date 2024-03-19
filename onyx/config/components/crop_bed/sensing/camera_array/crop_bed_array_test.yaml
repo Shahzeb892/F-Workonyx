@@ -1,0 +1,4 @@
+crop_bed_id: 0
+image_path: /workspace/onyx/images
+camera_config_files:
+  0: /workspace/onyx/config/devices/crop_bed/camera_0.yaml

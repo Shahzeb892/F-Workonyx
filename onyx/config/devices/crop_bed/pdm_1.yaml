@@ -1,0 +1,136 @@
+address: 31
+bed_location_id: 1
+output_function_config:
+  1:
+    channel:
+      id: 1
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  2:
+    channel:
+      id: 2
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  3:
+    channel:
+      id: 3
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  4:
+    channel:
+      id: 4
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  5:
+    channel:
+      id: 5
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  6:
+    channel:
+      id: 6
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  7:
+    channel:
+      id: 7
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  8:
+    channel:
+      id: 8
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  9:
+    channel:
+      id: 9
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  10:
+    channel:
+      id: 10
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  11:
+    channel:
+      id: 11
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+  12:
+    channel:
+      id: 12
+    load_profile: Lamp
+    loss_of_communication: CHZero
+    soft_start_step_size:
+      percent: null
+      enabled: false
+    local_source_control: 255
+    power_on_reset: 2
+output_channels_config:
+  1: 46
+  2: 46
+  3: 46
+  4: 46
+  5: 46
+  6: 46
+  7: 46
+  8: 46
+  9: 46
+  10: 46
+  11: 46
+  12: 46

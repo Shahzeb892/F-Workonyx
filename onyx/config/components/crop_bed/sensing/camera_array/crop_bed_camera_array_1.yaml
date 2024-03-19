@@ -1,0 +1,5 @@
+crop_bed_id: 1
+image_path: ./images
+camera_config_files:
+  1: ./config/devices/crop_bed/camera_3.yaml
+  0: ./config/devices/crop_bed/camera_2.yaml
