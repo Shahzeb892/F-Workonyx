@@ -1,0 +1,44 @@
+name: Build & Release
+on:
+  push:
+    #branches: [ main ]
+jobs:
+  onyx-cargo-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Extract branch name
+        shell: bash
+        run: echo "branch=${GITHUB_HEAD_REF:-${GITHUB_REF#refs/heads/}}" | sed 's/\//\_/g' >> $GITHUB_OUTPUT
+        id: extract_branch
+      - name: Login to container registry
+        uses: Flux-Robotics/github-actions/registry-login@v1
+        with:
+          registry_password: ${{ secrets.DOCKERHUB }}
+      - uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.GH_PAT }}
+          submodules: 'recursive'
+      -
+       name: Build release image - Image Capture
+       uses: Flux-Robotics/github-actions/build-release@v1
+       with:
+          build_image: fluxrobotics/development_onyx:main
+          release_image: fluxrobotics/production_aravis:main
+          release_tag: fluxrobotics/onyx_image_capture:${{ steps.extract_branch.outputs.branch }}
+          binary: image_capture
+      -
+       name: Build release image - Spray System
+       uses: Flux-Robotics/github-actions/build-release@v1
+       with:
+          build_image: fluxrobotics/development_onyx:main
+          release_image: fluxrobotics/production_aravis:main
+          release_tag: fluxrobotics/onyx_spray:${{ steps.extract_branch.outputs.branch }}
+          binary: spray
+      -
+       name: Build release image - Lighting System
+       uses: Flux-Robotics/github-actions/build-release@v1
+       with:
+          build_image: fluxrobotics/development_onyx:main
+          release_image: fluxrobotics/production_aravis:main
+          release_tag: fluxrobotics/onyx_lighting:${{ steps.extract_branch.outputs.branch }}
+          binary: lighting
