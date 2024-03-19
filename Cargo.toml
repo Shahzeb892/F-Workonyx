@@ -1,0 +1,10 @@
+[workspace]
+
+members = [
+  "onyx", 
+  "systems/crop_bed/spray",
+  "systems/crop_bed/lighting",
+  "systems/crop_bed/image_capture",
+  "systems/utilities/speed_measurement",
+]
+

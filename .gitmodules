@@ -1,0 +1,4 @@
+[submodule "dependencies/ix3212-pdm-rs"]
+	path = dependencies/ix3212-pdm-rs
+	url = git@github.com:Flux-Robotics/ix3212-pdm-rs.git
+        branch = main
